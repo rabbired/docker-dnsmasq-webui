@@ -1,4 +1,4 @@
-FROM alpine:arm32v7
+FROM arm32v7/alpine:latest
 
 RUN apk update && apk upgrade \
     && apk --no-cache add dnsmasq bash \
