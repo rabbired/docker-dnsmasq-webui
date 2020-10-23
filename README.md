@@ -34,12 +34,12 @@ dnsmasq in a docker container, configurable via a [simple web UI](https://github
     -d \
     -p 53:53/udp \
     -p 5380:8080 \
-    -v /opt/dnsmasq.conf:/etc/dnsmasq.conf \
-    --log-opt "max-size=100m" \
+    -v "path":/data \
+    --log-opt "max-size=10m" \
     -e "HTTP_USER=foo" \
     -e "HTTP_PASS=bar" \
     --restart always \
-    eafxx/dnsmasq
+    rabbired/dnsmasq
    ```
 
 1. Visit `http://<docker-host>:5380`, authenticate with `foo/bar` and you should see
