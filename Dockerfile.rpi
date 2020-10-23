@@ -14,4 +14,6 @@ RUN mkdir -p /etc/default/ \
     && rm -rf /root/.cache \
     && rm -rf /tmp/*
 
+COPY hooks/qemu-arm-static /usr/bin/qemu-arm-static
+
 ENTRYPOINT ["webproc","--configuration-file","/etc/dnsmasq.conf","--","dnsmasq","--no-daemon"]
