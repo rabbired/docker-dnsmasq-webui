@@ -1,4 +1,5 @@
 FROM alpine:latest
+LABEL maintainer="rabbired@outlook.com"
 
 RUN apk update && apk upgrade \
     && apk --no-cache add dnsmasq bash \
