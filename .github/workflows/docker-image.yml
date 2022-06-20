@@ -22,7 +22,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment: Docker.io
+    environment: 
+      name: Docker.io
     permissions:
       contents: read
       packages: write
