@@ -14,7 +14,8 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
   # <repo>
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  # IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: dnsmasq-webui
   IMAGE_TAG: latest
 
 jobs:
